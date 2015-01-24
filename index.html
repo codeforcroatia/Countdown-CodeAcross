@@ -32,7 +32,7 @@
   		$(function () {
   			var holiday = new Date();
   			holiday = new Date(2015, 2 - 1, 19);
-  			$('#defaultCountdown').countdown($.extend({until: holiday}, $.countdown.regionalOptions['hr']));
+  			$('#defaultCountdown').countdown({until: holiday});
   			$('#year').text(austDay.getFullYear());
   		});
 
