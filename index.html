@@ -28,17 +28,17 @@
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-countdown/1.6.3/jquery.countdown.min.js"></script>
 
+<script type="text/javascript" src="//keith-wood.name/js/jquery.countdown-hr.js"></script>
+
 		<script type="text/javascript">
   		$(function () {
   			var holiday = new Date();
   			holiday = new Date(2015, 2 - 1, 19);
-  			$('#defaultCountdown').countdown({until: holiday});
+  			$('#defaultCountdown').countdown($.countdown.regionalOptions['hr']);
   			$('#year').text(austDay.getFullYear());
   		});
 
 		</script>
-
-<script type="text/javascript" src="//keith-wood.name/js/jquery.countdown-hr.js"></script>
 
   </head>
 
