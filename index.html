@@ -36,7 +36,7 @@
   		$(function () {
   			var holiday = new Date();
   			holiday = new Date(2015, 2 - 1, 19);
-  			$('#defaultCountdown').countdown({until: holiday});
+  			$('#defaultCountdown').countdown($.extend({until: holiday}, $.countdown.regionalOptions['hr']));
   			$('#year').text(austDay.getFullYear());
   		});
 
@@ -48,7 +48,7 @@
 
     <div class="row">
       <div class="col-sm-12 text-center">
-				<h1 class="background-highlight">Do CodeAcross Hrvatska 2015</h1>
+				<h1 class="background-highlight">Do CodeAcross Hrvatska</h1>
         <h2 class="background-highlight">preostalo je:</h2>
 	       <img src="flag-tag.png" style="width:80%"/>
 
