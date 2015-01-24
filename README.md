@@ -1,4 +1,4 @@
-Countdown-to-the-Summit
+Countdown to the CodeAcross
 =======================
 
-A countdown to the 2014 Code for America Summit
+A countdown to the CodeAcross Croatia 2015
