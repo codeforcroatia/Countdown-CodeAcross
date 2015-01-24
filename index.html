@@ -35,6 +35,7 @@
   			var holiday = new Date();
   			holiday = new Date(2015, 2 - 1, 19);
   			$('#defaultCountdown').countdown({until: holiday});
+  			$('#defaultCountdown').countdown($.countdown.regionalOptions['hr']);
   			$('#year').text(austDay.getFullYear());
   		});
 
