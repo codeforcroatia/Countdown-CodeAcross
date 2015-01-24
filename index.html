@@ -33,7 +33,7 @@
 		<script type="text/javascript">
   		$(function () {
   			var holiday = new Date();
-  			holiday = new Date(2015, 2 - 1, 19);
+  			holiday = new Date(2015, 2 - 1, 19), timezone: +10;
   			$('#defaultCountdown').countdown({until: holiday});
   			$('#year').text(austDay.getFullYear());
   		});
