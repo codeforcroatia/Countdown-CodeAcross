@@ -34,23 +34,9 @@
   		$(function () {
   			var holiday = new Date();
   			holiday = new Date(2015, 2 - 1, 19);
-   			$('#defaultCountdown').countdown($.countdown.regionalOptions['hr']);
   			$('#defaultCountdown').countdown({until: holiday});
   			$('#year').text(austDay.getFullYear());
   		});
-  		var newYear = new Date(); 
-		newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-		$('#newCountdown').countdown({until: newYear}); 
-		$(selector).countdown({until: liftoffTime, 
-    			labels: ['Yr', 'Mo', 'Wk', 'Dy', 'Hr', 'Mn', 'Sc'], 
-    			labels1: ['Yr1', 'Mo1', 'Wk1', 'Dy1', 'Hr1', 'Mn1', 'Sc1'], 
-    			labels2: ['Yr2', 'Mo2', 'Wk2', 'Dy2', 'Hr2', 'Mn2', 'Sc2'], 
-    			whichLabels: function(amount) { 
-        		var units = amount % 10; 
-        		var tens = Math.floor(amount % 100 / 10); 
-        		return (amount === 1 ? 1 : 
-            		(units >=2 && units <= 4 && tens !== 1 ? 2 : 0)); 
-    		}});
 		</script>
 
   </head>
